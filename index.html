@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ariel Almirón</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+     <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./assets/img/hero.png" alt="imagen de foto de perfil">
+            </div>
+            <h1>ALMIRÓN ARIEL</h1>
+            <h2>Analista de Sistemas - Frontend Developer</h2>
+            <div class="redes">
+                <a href="https://github.com/AlmironArielRunDev"><i class="fa-brands fa-github-in"></i></a>
+                <a href="https://www.linkedin.com/in/arielalmiron2070"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Ariel Almirón.</span><span>👋</span> Analista de sistemas entusiasta, orientado a resultados y en inicio de carrera en análisis y desarrollo de soluciones tecnológicas. Con conocimientos en programación, bases de datos, diseño de interfaces y resolución de problemas.</p>
+            <P> Comprometido con el aprendizaje continuo y el desarrollo de habilidades técnicas y analíticas para aportar valor en cada proyecto. Me motiva trabajar en diversos sectores, adaptándome a entornos colaborativos y de manera independiente para lograr soluciones eficientes.
+            </p>
+
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li><strong>Cumpleaños</strong>02-05-1991</li>
+                        <li><strong>Teléfono</strong>15-4049-8262</li>
+                        <li><strong>Email</strong>almironariel2070@gmail.com</li>
+                        <li><strong>Dirección</strong>Moreno, Buenos Aires</li>
+                        <li><strong>Github</strong><a class="github-link" href="https://github.com/AlmironArielRunDev">Ir a mi Perfil de Github</a></li>
+                        <li><strong>Cargo</strong><span>FREELANCE</span></li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>PROGRAMAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SECCION DE DESCARGAR EL CV EN PDF -->
+            <!-- Botón para mostrar la vista previa y descargar el CV -->
+            <button id="preview-btn">Descargar CV <i class="fa-solid fa-download"></i><span class="overlay"></span></button>
+        </section>
+
+        <!-- SECCION CURRICULUM -->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>Técnico Superior en Análisis de Sistemas</h4>
+                            <span class="institucion">Instituto Superior de Formación Técnica 179 Dr. Carlos Pellegrini</span>
+                            <span class="fecha">2020 - 2024</span>
+                            <p>Técnico capacitado para diagnosticar necesidades, diseñar, desarrollar, poner en servicio y mantener productos, servicios o soluciones informáticas acorde a las organizaciones que lo requieran. Capacitado en Toma y análisis de requierimientos, control de calidad y desarrollo de software</p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Bachiller en Ciencias Naturales</h4>
+                            <span class="institucion">Instituto de Educación Media N. 212</span>
+                            <span class="fecha">2016 - 2019</span>
+                            <p>Bachiller orientado a las ciencias naturales, donde adquirí una sólida base en matemáticas, biología, física y química. Con éste enfoque multidisciplinario desarrollé habilidades analíticas y de resolución de problemas, esenciales para mi carrera en la informática.</p>
+                            <p>Mí curiosidad por la tecnología y los sistemas complejos, me llevó a explorar el mundo de la programación y el desarrollo de software. Los principios científicos y lógicos adquiridos en esta etapa me han sido fundamentales para afrontar desafíos.</p>
+                            <div class="conectori">
+                            <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Frontend Developer - Desarrollador Web</h4>
+                            <span class="institucion">Educacion IT</span>
+                            <span class="fecha">2019 - 2020</span>
+                            <p>Curso avanzado de Diseño y Maquetación Web con HTML5, CSS | maquetación, patrones de diseño, Interactividad,    Experiencia de usuario UI/UIX</p>
+
+                            <p>Curso básico e Intermedio de programación web con JavaScript. React y Tailwind. 
+                            Desarrollo de proyectos, analisis de requerimientos, interactividad, Experiencia de usuario</p>
+
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Frontend Developer</h4>
+                        <span class="institucion">Freelancer</span>
+                        <span class="fecha">2019 - actualidad</span>
+                        <p>Desarrollé páginas web independientes basadas en UI/UX funcionales y dinámicas, además realicé actualizaciones de sitios webs a diseños modernos e intuitivos utilizando diferentes lenguajes de programación aplicables a funciones específicas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Colaborador en proyecto de desarrolla de Software</h4>
+                        <span class="institucion">Instituto Municipal de Desarrollo Económico Local (IMDEL)</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Me desempeñé como líder de grupo de desarrollo de una aplicación para el registro y almacenamiento de datos de solicitantes a puestos de empleo y posterior creación de curriculum vitae. Realicé tareas como análisis y toma de requerimientos, organización de equipo, limpieza, filtrado y reestructuración de base de datos. Me desempeñé como soporte técnico en la implementación del software en la Expo Empleo 2, Cuartel V.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Sopórte técnico informático y resolución de problemas</h4>
+                        <span class="institucion"></span>
+                        <span class="fecha">2017 - 2019</span>
+                        <p>Diagnostiqué y reparé equipos informáticos: computadoras de escritorio, portátiles y otros dispositivos electrónicos, asegurando la resolución eficiente de problemas técnicos tanto de hardware como de software.</p>
+
+                        <p>Instalé y comfiguré sistemas operativos, aplicaciones, y software de seguridad.</p>
+                            
+                        <p>Realicé mantenimiento preventivo y limpieza interna de equipos, mejorando el rendimiento y prolongando la vida útil de los dispositivos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- SECCION PORTAFOLIO -->
+       <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="./proyectos/youtube/youtube.html">
+                        <img src="./assets/img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href=""></a>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+       </section>
+
+       <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <form class="col" action="mailto:almironariel2070@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Tu Nombre" required>
+                        <input type="text" name="phone" placeholder="Número telefónico" required>
+                        <input type="email" name="email" placeholder="Dirección de Correo" required>
+                        <input type="text" name="subject" placeholder="Asunto" required>
+                        <textarea name="message" placeholder="Mensaje" cols="30" rows="10" required></textarea>
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                    
+
+                    <!-- MAPA -->
+                     <div class="col">
+                        <img src="./assets/img/mapa.png" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Moreno, Buenos Aires, Argentina
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    +54 11-4049-8262
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    almironariel@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION FOOTER -->
+         <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/arielalmiron2070"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT -->
+         <script src="main.js"></script>
+         <script>
+            // Ruta del archivo PDF
+            const pdfUrl = './assets/certificado.pdf';
+    
+            document.getElementById('preview-btn').addEventListener('click', function() {
+                // Abrir una nueva ventana con el PDF
+                window.open(pdfUrl, '_blank');
+            });
+        </script>
+            
+
+</body>
+</html>

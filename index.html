@@ -11,7 +11,7 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <!-- MENU ENCABEZADO -->
+    <!-- MENU ENCABEZADO  main-->
     <div class="container-header">
         <header>
             <div class="logo">
@@ -65,7 +65,8 @@
                     <ul>
                         <li><strong>Cumpleaños</strong>02-05-1991</li>
                         <li><strong>Teléfono</strong>15-4049-8262</li>
-                        <li><strong>Email</strong>almironariel2070@gmail.com</li>
+                        <li><strong>Email</strong> almironariel2070&#64;gmail&#46;com</li>
+
                         <li><strong>Dirección</strong>Moreno, Buenos Aires</li>
                         <li><strong>Github</strong><a class="github-link" href="https://github.com/AlmironArielRunDev">Ir a mi Perfil de Github</a></li>
                         <li><strong>Cargo</strong><span>FREELANCE</span></li>
@@ -238,17 +239,25 @@
             <div class="contenido-seccion">
                 <h2>CONTACTO</h2>
                 <div class="fila">
-                    <form class="col" action="mailto:almironariel2070@gmail.com" method="post" enctype="text/plain">
+                    <form action="https://formsubmit.co/almironariel2070@gmail.com" method="POST">
                         <input type="text" name="name" placeholder="Tu Nombre" required>
                         <input type="text" name="phone" placeholder="Número telefónico" required>
                         <input type="email" name="email" placeholder="Dirección de Correo" required>
                         <input type="text" name="subject" placeholder="Asunto" required>
-                        <textarea name="message" placeholder="Mensaje" cols="30" rows="10" required></textarea>
+                        <textarea name="message" placeholder="Mensaje" required></textarea>
+
+                        <!-- Protección antispam -->
+                        <input type="text" name="_honey" style="display:none">
+                        
+                        <!-- Sin CAPTCHA (opcional) -->
+                        <input type="hidden" name="_captcha" value="false">
+
                         <button type="submit">
                             Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                             <span class="overlay"></span>
                         </button>
                     </form>
+
                     
 
                     <!-- MAPA -->
@@ -266,8 +275,9 @@
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-envelope"></i>
-                                    almironariel@gmail.com
+                                    almironariel&#64;gmail&#46;com
                                 </li>
+
                             </ul>
                         </div>
                      </div>
@@ -292,7 +302,7 @@
          <script src="main.js"></script>
          <script>
             // Ruta del archivo PDF
-            const pdfUrl = './assets/certificado.pdf';
+            const pdfUrl = './assets/Almiron_Ariel_CV.pdf';
     
             document.getElementById('preview-btn').addEventListener('click', function() {
                 // Abrir una nueva ventana con el PDF

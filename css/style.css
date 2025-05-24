@@ -403,13 +403,18 @@ html{
 }
 .contacto .fila{
     display: flex;
+    justify-content: space-around;
 }
 .contacto .col{
     width: 50%;
     padding: 10px;
     position: relative;
 }
-.contacto .col input, .contacto .col textarea{
+.contacto form{
+    width: 50%;
+    margin-right: 20px;
+}
+.contacto form input, .contacto form textarea{
     display: block;
     width: 100%;
     padding: 18px;
@@ -577,7 +582,7 @@ footer .arriba{
         display: block;
         max-width: 90%;
     }
-    portfolio .galeria .proyecto img{
+    .portfolio .galeria .proyecto img{
         width: 100%;
     }
     .contacto .fila{
@@ -586,8 +591,66 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+    .contacto form{
+        width: 90%;
+        margin: 20px 0;
+        margin: auto;
 }
 
+@media screen and (max-width: 400px) {
+ /* SECCION CURRICULUM */
+.curriculum{
+    width: 100%;
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 100%;
+}
+.curriculum .fila{
+    display: flex;
+    flex-direction: column;
+}
+.curriculum .fila .col .izquierda{
+    width: 100%;
+    padding: 0px 0px;
+}
+.curriculum .fila .col .derecha{
+    width: 100%;
+    padding: 0;
+}
 
-
-/* BOTON DESCARGA DEL CV */
+.curriculum .fila .izquierda{
+    border-right: none;
+}
+.curriculum .fila .derecha{
+    border-left: none;
+}
+.curriculum .fila .item .institucion{
+    color: #1cb698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .izq{
+    border-right: none;
+    margin-right: 0px;
+}
+.curriculum .fila .der{
+    border-left: none;
+    margin-left: 0px;
+}
+.curriculum .fila .item .conectori{
+   display: none;
+}
+.curriculum .fila .item .conectori .circuloi{
+   display: none;
+}
+.curriculum .fila .item .conectord{
+  display: none;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: none;
+}
+}

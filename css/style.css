@@ -9,7 +9,12 @@
 html{
     scroll-behavior: smooth;
 }
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
 /* MENU */
 .container-header{
     background: #1e2326;
@@ -653,4 +658,4 @@ footer .arriba{
 .curriculum .fila .item .conectord .circulod{
     display: none;
 }
-}
+}}

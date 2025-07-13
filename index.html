@@ -8,7 +8,7 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Portfolio</title>
+    <title>Portafolio Web</title>
 </head>
 <body>
     <!-- MENU ENCABEZADO  main-->
@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <!-- <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li> -->
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
@@ -39,13 +39,14 @@
             <div class="contenedor-img">
                 <img src="./assets/img/hero.png" alt="imagen de foto de perfil">
             </div>
-            <h1>ALMIRÓN ARIEL</h1>
-            <h2>Analista de Sistemas - Frontend Developer</h2>
+            <h1 style='margin-bottom: .5em'>ALMIRÓN ARIEL</h1>
+            <h3>Técnico Superior en Análisis de Sistemas </h3>
+            <h2>Front-End Developer</h2>
             <div class="redes">
-                <a href="https://github.com/AlmironArielRunDev"><i class="fa-brands fa-github-in"></i></a>
-                <a href="https://www.linkedin.com/in/arielalmiron2070"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/AlmironArielRunDev" target="_blank"><i class="fa-brands fa-github-alt fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/arielalmiron2070" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#contacto"><i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;" target="_blank"></i></a>
+                <!-- <a href="#" target="_blank"></a> -->
             </div>
         </div>
     </section>
@@ -64,11 +65,10 @@
                     <h3>Datos Personales</h3>
                     <ul>
                         <li><strong>Cumpleaños</strong>02-05-1991</li>
-                        <li><strong>Teléfono</strong>15-4049-8262</li>
-                        <li><strong>Email</strong> almironariel2070&#64;gmail&#46;com</li>
-
+                        <li><strong>Teléfono</strong>15 4049-8262</li>
+                       <li><strong>E-Mail: </strong>&#97;&#108;&#109;&#105;&#114;&#111;&#110;&#97;&#114;&#105;&#101;&#108;&#50;&#48;&#55;&#48;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</li>
                         <li><strong>Dirección</strong>Moreno, Buenos Aires</li>
-                        <li><strong>Github</strong><a class="github-link" href="https://github.com/AlmironArielRunDev">Ir a mi Perfil de Github</a></li>
+                        <li><strong>Github</strong><a class="github-link" href="https://github.com/AlmironArielRunDev" target="_blank">Visitar Perfil de Github</a></li>
                         <li><strong>Cargo</strong><span>FREELANCE</span></li>
                     </ul>
                 </div>
@@ -102,7 +102,7 @@
             </div>
             <!-- SECCION DE DESCARGAR EL CV EN PDF -->
             <!-- Botón para mostrar la vista previa y descargar el CV -->
-            <button id="preview-btn">Descargar CV <i class="fa-solid fa-download"></i><span class="overlay"></span></button>
+            <button id="preview-btn">DESCARGAR CV <i class="fa-solid fa-download"></i><span class="overlay"></span></button>
         </section>
 
         <!-- SECCION CURRICULUM -->
@@ -137,8 +137,8 @@
                             <span class="fecha">2019 - 2020</span>
                             <p>Curso avanzado de Diseño y Maquetación Web con HTML5, CSS | maquetación, patrones de diseño, Interactividad,    Experiencia de usuario UI/UIX</p>
 
-                            <p>Curso básico e Intermedio de programación web con JavaScript. React y Tailwind. 
-                            Desarrollo de proyectos, analisis de requerimientos, interactividad, Experiencia de usuario</p>
+                            <p>Curso avanzado de programación web con JavaScript. Nivel intermedio de React, Tailwind, Node.js. 
+                            Desarrollo de proyectos, análisis de requerimientos, interactividad, Experiencia de usuario</p>
 
                             <div class="conectori">
                                 <div class="circuloi"></div>
@@ -150,9 +150,9 @@
                     <h3>Experiencia Laboral</h3>
                     <div class="item der">
                         <h4>Frontend Developer</h4>
-                        <span class="institucion">Freelancer</span>
+                        <span class="institucion">Freelance</span>
                         <span class="fecha">2019 - actualidad</span>
-                        <p>Desarrollé páginas web independientes basadas en UI/UX funcionales y dinámicas, además realicé actualizaciones de sitios webs a diseños modernos e intuitivos utilizando diferentes lenguajes de programación aplicables a funciones específicas.</p>
+                        <p>Desarrollé páginas web independientes, centradas en interfaces UI/UX funcionales y dinámicas, principalmente para proyectos de comercio electrónico (E-Commerce) y sistemas de gestión de inventario. Además, realicé actualizaciones de sitios web, adaptándolos a diseños modernos e intuitivos mediante el uso de diversos lenguajes de programación aplicados a funciones específicas.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -161,20 +161,20 @@
                         <h4>Colaborador en proyecto de desarrolla de Software</h4>
                         <span class="institucion">Instituto Municipal de Desarrollo Económico Local (IMDEL)</span>
                         <span class="fecha">2023 - 2024</span>
-                        <p>Me desempeñé como líder de grupo de desarrollo de una aplicación para el registro y almacenamiento de datos de solicitantes a puestos de empleo y posterior creación de curriculum vitae. Realicé tareas como análisis y toma de requerimientos, organización de equipo, limpieza, filtrado y reestructuración de base de datos. Me desempeñé como soporte técnico en la implementación del software en la Expo Empleo 2, Cuartel V.</p>
+                        <p>Me desempeñé como líder del equipo de desarrollo de una aplicación destinada al registro y almacenamiento de datos de solicitantes a puestos de empleo, así como a la posterior creación de sus currículums vitae. Entre mis tareas se incluyeron el análisis y levantamiento de requerimientos, la organización del equipo de trabajo, y la limpieza, filtrado y reestructuración de la base de datos. También brindé soporte técnico durante la implementación del software en la Expo Empleo 2, realizada en Cuartel V.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Sopórte técnico informático y resolución de problemas</h4>
-                        <span class="institucion"></span>
-                        <span class="fecha">2017 - 2019</span>
+                        <h4>Sopórte técnico informático y reparación de PC</h4>
+                        <span class="institucion">Innovartech Computación</span>
+                        <span class="fecha">2017 - 2020</span>
                         <p>Diagnostiqué y reparé equipos informáticos: computadoras de escritorio, portátiles y otros dispositivos electrónicos, asegurando la resolución eficiente de problemas técnicos tanto de hardware como de software.</p>
 
-                        <p>Instalé y comfiguré sistemas operativos, aplicaciones, y software de seguridad.</p>
+                        <p>Instalé y configuré sistemas operativos, aplicaciones, y software de seguridad.</p>
                             
-                        <p>Realicé mantenimiento preventivo y limpieza interna de equipos, mejorando el rendimiento y prolongando la vida útil de los dispositivos.</p>
+                        <p>Realicé mantenimiento preventivo, armado de PC y limpieza interna de equipos, mejorando el rendimiento y prolongando la vida útil de los dispositivos.</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -187,13 +187,13 @@
       <!-- SECCION PORTAFOLIO -->
        <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
+            <h2>MIS TRABAJOS</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <a href="https://almironarielrundev.github.io/netflix-clone/">
-                        <img src="./assets/img/p1.jpg" alt="Pagina Proyecto Clon de Netflix">
+                    <a href="https://almironarielrundev.github.io/netflix-clone/" target="_blank">
+                        <img src="./assets/img/netflix_clone_web.png" alt="Página Proyecto Clon de Netflix con React">
                     <div class="overlay">
-                        <h3>netflix clone con React / Vite</h3>
+                        <h3>Netflix clone con React + Vite</h3>
                         <p>Desarrollo Web</p>
                     </div>
                     </a>
@@ -202,32 +202,40 @@
                     <a href=""></a>
                 </div>
                 <div class="proyecto">
-                    <img src="./assets/img/p1.jpg" alt="">
+                    <a href="#" target="_blank">
+                        <img src="./assets/img/p1.jpg" alt="">
                     <div class="overlay">
                         <h3>Diseño Creativo</h3>
                         <p>Fotografia</p>
                     </div>
+                    </a>
                 </div>
                 <div class="proyecto">
-                    <img src="./assets/img/p1.jpg" alt="">
+                    <a href="#" target="_blank">
+                        <img src="./assets/img/p1.jpg" alt="">
                     <div class="overlay">
                         <h3>Diseño Creativo</h3>
                         <p>Fotografia</p>
                     </div>
+                    </a>
                 </div>
                 <div class="proyecto">
-                    <img src="./assets/img/p1.jpg" alt="">
+                    <a href="#" target="_blank">
+                        <img src="./assets/img/p1.jpg" alt="">
                     <div class="overlay">
                         <h3>Diseño Creativo</h3>
                         <p>Fotografia</p>
                     </div>
+                    </a>
                 </div>
                 <div class="proyecto">
-                    <img src="./assets/img/p1.jpg" alt="">
+                    <a href="#" target="_blank">
+                        <img src="./assets/img/p1.jpg" alt="">
                     <div class="overlay">
                         <h3>Diseño Creativo</h3>
                         <p>Fotografia</p>
                     </div>
+                    </a>
                 </div>
                 
             </div>
@@ -271,11 +279,11 @@
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-mobile-screen"></i>
-                                    +54 11-4049-8262
+                                    11 4049-8262
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-envelope"></i>
-                                    almironariel&#64;gmail&#46;com
+                                    almironariel2070&#64;gmail&#46;com
                                 </li>
 
                             </ul>
@@ -291,21 +299,19 @@
                 <i class="fa-solid fa-angles-up"></i>
             </a>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://www.linkedin.com/in/arielalmiron2070"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/AlmironArielRunDev" target="_blank"><i class="fa-brands fa-github-alt fa-lg"></i></a>
+                <a href="https://www.linkedin.com/in/arielalmiron2070" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#contacto"><i class="fa-solid fa-envelope fa-lg" style="color: #ffffff;" target="_blank"></i></a>
+                <!-- <a href="#" target="_blank"></a> -->
             </div>
         </footer>
 
         <!-- JAVASCRIPT -->
          <script src="main.js"></script>
          <script>
-            // Ruta del archivo PDF
             const pdfUrl = './assets/Almiron_Ariel_CV.pdf';
     
             document.getElementById('preview-btn').addEventListener('click', function() {
-                // Abrir una nueva ventana con el PDF
                 window.open(pdfUrl, '_blank');
             });
         </script>

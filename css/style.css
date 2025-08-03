@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -14,6 +13,10 @@ html{
     align-items: center;
     justify-content: center;
 
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 /* MENU */
 .container-header{
@@ -355,16 +358,29 @@ html{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.portfolio .card-content{
+    /* height: 350px; */
+    width: 350px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1E2326;
+    border-radius: 2%;
+}
 .portfolio .galeria .proyecto{
     position: relative;
     max-width: 340px;
     height: fit-content;
-    margin: 10px;
     cursor: pointer;
+    border-radius: 2%;
 }
 .portfolio .galeria .proyecto img{
     width: 100%;
+    height: 200px;
+    margin: 5px;
     display: block;
+    border-radius: 2%;
+
 }
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
@@ -387,6 +403,42 @@ html{
 }
 .portfolio .galeria .proyecto .overlay:hover{
     opacity: 1;
+}
+.portfolio .card-content .card-titulo{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.portfolio .card-content .card-stack{
+    width: 100%;
+    padding: 10px;
+}
+.portfolio .card-content button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    width: fit-content;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.portfolio .card-content button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+.portfolio .card-content button:hover .overlay{
+    width: 100%;
 }
 
 /* SECCION CONTACTO */
@@ -589,6 +641,7 @@ footer .arriba{
     }
     .portfolio .galeria .proyecto img{
         width: 100%;
+        height: 320px;
     }
     .contacto .fila{
         display: block;
